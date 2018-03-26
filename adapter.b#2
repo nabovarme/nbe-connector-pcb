@@ -114,7 +114,7 @@
 <wire x1="6.27" y1="80" x2="1.27" y2="75" width="0.254" layer="20" curve="90"/>
 <wire x1="1.27" y1="75" x2="1.27" y2="4.365" width="0.254" layer="20"/>
 <wire x1="1.27" y1="4.365" x2="6.27" y2="-0.635" width="0.254" layer="20" curve="90"/>
-<text x="18.415" y="3.175" size="1.27" layer="25" ratio="10" align="bottom-center">FOTO</text>
+<text x="18.415" y="3.175" size="1.27" layer="25" ratio="10" align="bottom-center">PHOTO</text>
 <text x="28.415" y="3.175" size="1.27" layer="25" ratio="10" align="bottom-center">IGNITION</text>
 <text x="40.415" y="1.905" size="1.27" layer="25" ratio="10" align="bottom-center">BLOWER-
 COND.</text>
@@ -144,8 +144,8 @@ COND.</text>
 <text x="73.66" y="31.75" size="1.778" layer="25" ratio="10" rot="R270" align="bottom-right">RS # 473-1809</text>
 <text x="55.88" y="73.66" size="1.778" layer="25" ratio="10">RS # 483-7991</text>
 <text x="10.16" y="8.255" size="1.27" layer="25" ratio="10" rot="R270" align="bottom-right">https://github.com/nabovarme/nbe-connector-pcb</text>
-<text x="84.455" y="34.29" size="1.778" layer="25" ratio="10">RS # 494-8990</text>
-<text x="84.455" y="30.48" size="1.778" layer="25" ratio="10">RS # 494-8899</text>
+<text x="86.36" y="28.575" size="1.778" layer="25" ratio="10">RS # 494-8990</text>
+<text x="86.36" y="24.765" size="1.778" layer="25" ratio="10">RS # 494-8899</text>
 </plain>
 <libraries>
 <library name="SparkFun-Sensors">
