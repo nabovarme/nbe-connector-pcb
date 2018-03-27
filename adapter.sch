@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.4.0">
+<eagle version="8.7.1">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -262,12 +262,12 @@ We've spent an enormous amount of time creating and checking these footprints an
 </deviceset>
 </devicesets>
 </library>
-<library name="con-wago-500" urn="urn:adsk.eagle:library:195">
+<library name="con-wago-500">
 <description>&lt;b&gt;Wago Screw Clamps&lt;/b&gt;&lt;p&gt;
 Grid 5.00 mm&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="W237-102" urn="urn:adsk.eagle:footprint:10676/1" library_version="1">
+<package name="W237-102" urn="urn:adsk.eagle:footprint:10676/1" locally_modified="yes">
 <description>&lt;b&gt;WAGO SCREW CLAMP&lt;/b&gt;</description>
 <wire x1="-3.491" y1="-2.286" x2="-1.484" y2="-0.279" width="0.254" layer="51"/>
 <wire x1="1.488" y1="-2.261" x2="3.469" y2="-0.254" width="0.254" layer="51"/>
@@ -289,8 +289,8 @@ Grid 5.00 mm&lt;p&gt;
 <circle x="-2.5" y="2.2098" radius="0.508" width="0.1524" layer="21"/>
 <circle x="2.5038" y="-1.27" radius="1.4986" width="0.1524" layer="51"/>
 <circle x="2.5038" y="2.2098" radius="0.508" width="0.1524" layer="21"/>
-<pad name="1" x="-2.5" y="-1.27" drill="1.1938" shape="long" rot="R90"/>
-<pad name="2" x="2.5" y="-1.27" drill="1.1938" shape="long" rot="R90"/>
+<pad name="1" x="-2.5" y="-1.27" drill="1.6" shape="long" rot="R90"/>
+<pad name="2" x="2.5" y="-1.27" drill="1.6" shape="long" rot="R90"/>
 <text x="-5.04" y="-7.62" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 <text x="-3.8462" y="-5.0038" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-4.532" y="0.635" size="1.27" layer="21" ratio="10">1</text>
@@ -298,17 +298,20 @@ Grid 5.00 mm&lt;p&gt;
 </package>
 </packages>
 <packages3d>
-<package3d name="W237-102" urn="urn:adsk.eagle:package:10688/1" type="box" library_version="1">
+<package3d name="W237-102" urn="urn:adsk.eagle:package:10688/1" locally_modified="yes" type="box">
 <description>WAGO SCREW CLAMP</description>
+<packageinstances>
+<packageinstance name="W237-102"/>
+</packageinstances>
 </package3d>
 </packages3d>
 <symbols>
-<symbol name="KL" urn="urn:adsk.eagle:symbol:10675/1" library_version="1">
+<symbol name="KL" urn="urn:adsk.eagle:symbol:10675/1">
 <circle x="1.27" y="0" radius="1.27" width="0.254" layer="94"/>
 <text x="0" y="0.889" size="1.778" layer="95" rot="R180">&gt;NAME</text>
 <pin name="KL" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 </symbol>
-<symbol name="KL+V" urn="urn:adsk.eagle:symbol:10673/1" library_version="1">
+<symbol name="KL+V" urn="urn:adsk.eagle:symbol:10673/1">
 <circle x="1.27" y="0" radius="1.27" width="0.254" layer="94"/>
 <text x="-2.54" y="-3.683" size="1.778" layer="96">&gt;VALUE</text>
 <text x="0" y="0.889" size="1.778" layer="95" rot="R180">&gt;NAME</text>
@@ -316,7 +319,7 @@ Grid 5.00 mm&lt;p&gt;
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="W237-102" urn="urn:adsk.eagle:component:10702/1" prefix="X" uservalue="yes" library_version="1">
+<deviceset name="W237-102" urn="urn:adsk.eagle:component:10702/1" locally_modified="yes" prefix="X" uservalue="yes">
 <description>&lt;b&gt;WAGO SCREW CLAMP&lt;/b&gt;</description>
 <gates>
 <gate name="-1" symbol="KL" x="0" y="5.08" addlevel="always"/>
@@ -360,14 +363,14 @@ Grid 5.00 mm&lt;p&gt;
 <part name="KTY81/210" library="SparkFun-Sensors" deviceset="TEMPERATURE-SENSOR" device=""/>
 <part name="U$1" library="PX0959:P" deviceset="PX0959/P" device=""/>
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device="" value="N"/>
-<part name="PHOTO" library="con-wago-500" library_urn="urn:adsk.eagle:library:195" deviceset="W237-102" device="" package3d_urn="urn:adsk.eagle:package:10688/1"/>
-<part name="IGNITION" library="con-wago-500" library_urn="urn:adsk.eagle:library:195" deviceset="W237-102" device="" package3d_urn="urn:adsk.eagle:package:10688/1"/>
-<part name="BLOWER-COND." library="con-wago-500" library_urn="urn:adsk.eagle:library:195" deviceset="W237-102" device="" package3d_urn="urn:adsk.eagle:package:10688/1"/>
-<part name="BLOWER" library="con-wago-500" library_urn="urn:adsk.eagle:library:195" deviceset="W237-102" device="" package3d_urn="urn:adsk.eagle:package:10688/1"/>
-<part name="BLOWER-2" library="con-wago-500" library_urn="urn:adsk.eagle:library:195" deviceset="W237-102" device="" package3d_urn="urn:adsk.eagle:package:10688/1"/>
-<part name="MOTOR-COND." library="con-wago-500" library_urn="urn:adsk.eagle:library:195" deviceset="W237-102" device="" package3d_urn="urn:adsk.eagle:package:10688/1"/>
-<part name="MOTOR" library="con-wago-500" library_urn="urn:adsk.eagle:library:195" deviceset="W237-102" device="" package3d_urn="urn:adsk.eagle:package:10688/1"/>
-<part name="MOTOR-2" library="con-wago-500" library_urn="urn:adsk.eagle:library:195" deviceset="W237-102" device="" package3d_urn="urn:adsk.eagle:package:10688/1"/>
+<part name="PHOTO" library="con-wago-500" deviceset="W237-102" device="" package3d_urn="urn:adsk.eagle:package:10688/1"/>
+<part name="IGNITION" library="con-wago-500" deviceset="W237-102" device="" package3d_urn="urn:adsk.eagle:package:10688/1"/>
+<part name="BLOWER-COND." library="con-wago-500" deviceset="W237-102" device="" package3d_urn="urn:adsk.eagle:package:10688/1"/>
+<part name="BLOWER" library="con-wago-500" deviceset="W237-102" device="" package3d_urn="urn:adsk.eagle:package:10688/1"/>
+<part name="BLOWER-2" library="con-wago-500" deviceset="W237-102" device="" package3d_urn="urn:adsk.eagle:package:10688/1"/>
+<part name="MOTOR-COND." library="con-wago-500" deviceset="W237-102" device="" package3d_urn="urn:adsk.eagle:package:10688/1"/>
+<part name="MOTOR" library="con-wago-500" deviceset="W237-102" device="" package3d_urn="urn:adsk.eagle:package:10688/1"/>
+<part name="MOTOR-2" library="con-wago-500" deviceset="W237-102" device="" package3d_urn="urn:adsk.eagle:package:10688/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -542,11 +545,6 @@ Grid 5.00 mm&lt;p&gt;
 </schematic>
 </drawing>
 <compatibility>
-<note version="8.2" severity="warning">
-Since Version 8.2, EAGLE supports online libraries. The ids
-of those online libraries will not be understood (or retained)
-with this version.
-</note>
 <note version="8.3" severity="warning">
 Since Version 8.3, EAGLE supports URNs for individual library
 assets (packages, symbols, and devices). The URNs of those assets
